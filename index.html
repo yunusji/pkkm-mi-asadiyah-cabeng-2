@@ -18,8 +18,8 @@
                         amber: '#D97706',
                         emerald: '#047857',
                         rose: '#BE123C',
+                        teal: '#0D9488',
                         dark: '#1E293B',
-                        light: '#F8FAFC'
                     },
                     fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
                 }
@@ -27,28 +27,27 @@
         }
     </script>
     <style>
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(30,64,175,0.15); }
-        .sub-card { border-left: 3px solid #1E40AF; transition: all 0.2s ease; }
-        .sub-card:hover { border-left-color: #D4AF37; background-color: #FEFDF8; }
-        .bukti-item { position: relative; padding-left: 1.25rem; }
+        .sub-card { border-left: 4px solid #1E40AF; transition: all 0.25s ease; }
+        .sub-card:hover { border-left-color: #D4AF37; background-color: #FFFEF8; }
+        .bukti-item { position: relative; padding-left: 1.4rem; }
         .bukti-item:before { content: "✓"; position: absolute; left: 0; color: #059669; font-weight: bold; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen text-slate-800">
+<body class="bg-gradient-to-br from-blue-50 via-indigo-50 to-sky-50 min-h-screen text-slate-800 font-sans">
 
 <!-- Header -->
-<header class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-6 shadow-xl">
+<header class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-6 shadow-lg">
     <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
                 <i class="fa fa-university text-3xl text-yellow-300"></i>
                 <div>
-                    <h1 class="text-2xl md:text-3xl font-bold">PKKM MI AS'ADIYAH CABENG II</h1>
-                    <p class="text-blue-200">Penilaian Kinerja Kepala Madrasah — Tahun Ke-4</p>
+                    <h1 class="text-2xl md:text-3xl font-bold leading-tight">PKKM MI AS'ADIYAH CABENG II</h1>
+                    <p class="text-blue-200 mt-1">Penilaian Kinerja Kepala Madrasah — Tahun Ke-4</p>
                 </div>
             </div>
-            <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
+            <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm whitespace-nowrap">
                 <i class="fa fa-calendar-check-o mr-2"></i>Tahun Penilaian
             </span>
         </div>
@@ -56,59 +55,56 @@
 </header>
 
 <!-- Info Bar -->
-<section class="bg-white shadow-sm border-b">
+<section class="bg-white shadow-sm border-b border-slate-100">
     <div class="container mx-auto px-4 py-3">
         <p class="text-sm text-slate-600">
             <i class="fa fa-info-circle text-primary mr-2"></i>
             Klik tombol <span class="font-semibold text-primary">"Buka Berkas"</span> untuk mengakses folder dokumen di Google Drive.
         </p>
     </div>
-	
 </section>
-<!-- ====================================== -->
-<!-- TAMBAHAN: LINK PRESENTASI PKKM -->
-<!-- ====================================== -->
-<section class="mb-8">
-    <div class="bg-gradient-to-r from-rose-600 to-red-500 rounded-2xl shadow-xl p-6 text-center">
-        <h3 class="text-white text-xl font-bold mb-3">📽️ LINK PRESENTASI PKKM</h3>
-        <p class="text-rose-100 mb-4">Klik tombol di bawah untuk membuka presentasi</p>
-        <a href="https://canva.link/ejpdeusuxf1lpdc" target="_blank" 
-           class="inline-block bg-white text-rose-600 font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-            <i class="fa fa-desktop mr-2"></i> BUKA PRESENTASI PKKM
-        </a>
+
+<!-- Link Presentasi PKKM -->
+<section class="py-6 px-4">
+    <div class="container mx-auto">
+        <div class="bg-gradient-to-r from-rose-600 to-red-500 rounded-2xl shadow-xl p-6 text-center">
+            <h3 class="text-white text-xl font-bold mb-2">📽️ LINK PRESENTASI PKKM</h3>
+            <p class="text-rose-100 mb-4">Klik tombol di bawah untuk membuka presentasi</p>
+            <a href="https://canva.link/ejpdeusuxf1lpdc" target="_blank" 
+               class="inline-flex items-center gap-2 bg-white text-rose-600 font-bold text-lg px-8 py-3.5 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                <i class="fa fa-desktop"></i> BUKA PRESENTASI PKKM
+            </a>
+        </div>
     </div>
 </section>
-<!-- ====================================== -->
-<!-- AKHIR TAMBAHAN -->
-<!-- ====================================== -->
 
-<main class="container mx-auto px-4 py-8">
+<main class="container mx-auto px-4 pb-12 space-y-8">
 
 <!-- ====================================== -->
 <!-- BAGIAN 1: USAHA PENGEMBANGAN MADRASAH -->
 <!-- ====================================== -->
-<section class="mb-10">
+<section>
     <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
         <div class="bg-gradient-to-r from-blue-700 to-blue-600 text-white p-5">
             <h2 class="text-xl font-bold flex items-center gap-3">
-                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center">1</span>
+                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0">1</span>
                 Usaha Pengembangan Madrasah
             </h2>
         </div>
-
         <div class="p-5 space-y-5">
             <!-- 1.1 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">1.1 Pengembangan Madrasah Sesuai Kebutuhan</h3>
-                    <a href="https://drive.google.com/drive/folders/1hSybFl93WRuit3AVT_GEApZqxSQYHx5b" target="_blank" class="bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">1.1 Pengembangan Madrasah Sesuai Kebutuhan</h3>
+                    <a href="https://drive.google.com/drive/folders/1hSybFl93WRuit3AVT_GEApZqxSQYHx5b" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menyusun struktur organisasi, menempatkan personil sesuai kebutuhan, menyusun SOP & pedoman kerja organisasi.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Dokumen struktur organisasi madrasah</li>
                         <li class="bukti-item">Notulen rapat penyusunan struktur</li>
                         <li class="bukti-item">SK / dokumen pengesahan struktur & personil</li>
@@ -118,19 +114,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 1.2 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">1.2 Pengelolaan Perubahan dan Pengembangan</h3>
-                    <a href="https://drive.google.com/drive/folders/1X2pFFfyS5ut4wMYDHbTVtuSuyYmyEDTD" target="_blank" class="bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">1.2 Pengelolaan Perubahan dan Pengembangan</h3>
+                    <a href="https://drive.google.com/drive/folders/1X2pFFfyS5ut4wMYDHbTVtuSuyYmyEDTD" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menyusun program terukur, membangun tim kerja efektif, menerapkan inovasi pembelajaran, meningkatkan prestasi siswa.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Visi, misi, dan tujuan madrasah</li>
                         <li class="bukti-item">Data prestasi madrasah & peserta didik</li>
                         <li class="bukti-item">Data kelulusan & data ALUMNI</li>
@@ -144,19 +140,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 1.3 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">1.3 Hubungan Madrasah dan Masyarakat</h3>
-                    <a href="https://drive.google.com/drive/folders/1TTQVJQ6agIxPG_UZ9p45yQ859yo_L07H" target="_blank" class="bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">1.3 Hubungan Madrasah dan Masyarakat</h3>
+                    <a href="https://drive.google.com/drive/folders/1TTQVJQ6agIxPG_UZ9p45yQ859yo_L07H" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menjalin kerja sama, melibatkan komite, memperoleh dukungan dari masyarakat & lembaga.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Program kerja Komite Madrasah</li>
                         <li class="bukti-item">SK & AD/ART Komite Madrasah</li>
                         <li class="bukti-item">MoU / dokumen kerja sama dengan instansi, pemerintah, & swasta</li>
@@ -165,19 +161,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 1.4 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">1.4 Pencapaian SNP (Standar Nasional Pendidikan)</h3>
-                    <a href="https://drive.google.com/drive/folders/15PfpWxdhOOPWEQqruGGIt-fjs90h1JQL" target="_blank" class="bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">1.4 Pencapaian SNP (Standar Nasional Pendidikan)</h3>
+                    <a href="https://drive.google.com/drive/folders/15PfpWxdhOOPWEQqruGGIt-fjs90h1JQL" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menerapkan Standar Isi, Proses, Penilaian, & Kelulusan sesuai SNP.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Dokumen analisis Standar Isi</li>
                         <li class="bukti-item">Dokumen analisis Standar Proses</li>
                         <li class="bukti-item">Dokumen analisis Standar Penilaian</li>
@@ -190,19 +186,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 1.5 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">1.5 Unit Layanan Khusus Madrasah</h3>
-                    <a href="https://drive.google.com/drive/folders/1maGinQisq5AasekQGNbJRow47RnkijHB" target="_blank" class="bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">1.5 Unit Layanan Khusus Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1maGinQisq5AasekQGNbJRow47RnkijHB" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Mengelola perpustakaan, laboratorium, koperasi, & unit usaha secara optimal.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Program kerja & laporan kegiatan laboratorium</li>
                         <li class="bukti-item">Program kerja perpustakaan</li>
                         <li class="bukti-item">Daftar buku induk perpustakaan</li>
@@ -213,19 +209,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 1.6 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">1.6 Sistem Informasi Madrasah (SIM)</h3>
-                    <a href="https://drive.google.com/drive/folders/1Z4Dmswk_y6uyz6t8mrswlK0R9GG8wHr3" target="_blank" class="bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">1.6 Sistem Informasi Madrasah (SIM)</h3>
+                    <a href="https://drive.google.com/drive/folders/1Z4Dmswk_y6uyz6t8mrswlK0R9GG8wHr3" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Mengelola sistem informasi untuk mendukung manajemen & pengambilan keputusan.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Dokumen pemanfaatan TIK untuk manajemen</li>
                         <li class="bukti-item">Daftar fasilitas TIK</li>
                         <li class="bukti-item">Website / blog madrasah</li>
@@ -235,19 +231,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 1.7 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">1.7 Kemajuan TIK untuk Peningkatan Pembelajaran</h3>
-                    <a href="https://drive.google.com/drive/folders/1iy8eGHmDtKjvftEo_9xu7rFRkpk1EsRN" target="_blank" class="bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">1.7 Kemajuan TIK untuk Peningkatan Pembelajaran</h3>
+                    <a href="https://drive.google.com/drive/folders/1iy8eGHmDtKjvftEo_9xu7rFRkpk1EsRN" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Memanfaatkan TIK untuk administrasi, pembelajaran, & layanan madrasah.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Penerapan TIK administrasi madrasah</li>
                         <li class="bukti-item">Pembelajaran online (Google Classroom / Edmodo, dll)</li>
                         <li class="bukti-item">Katalog digital perpustakaan</li>
@@ -262,50 +258,49 @@
 <!-- ====================================== -->
 <!-- BAGIAN 2: TUGAS MANAJERIAL -->
 <!-- ====================================== -->
-<section class="mb-10">
+<section>
     <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
         <div class="bg-gradient-to-r from-indigo-700 to-indigo-600 text-white p-5">
             <h2 class="text-xl font-bold flex items-center gap-3">
-                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center">2</span>
+                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0">2</span>
                 Pelaksanaan Tugas Manajerial
             </h2>
         </div>
-
         <div class="p-5 space-y-5">
             <!-- 2.1 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.1 Perencanaan Madrasah</h3>
-                    <a href="https://drive.google.com/drive/folders/1tPw2zl-kGsRxbU_3uhVha7qkhG9HcvMA" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.1 Perencanaan Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1tPw2zl-kGsRxbU_3uhVha7qkhG9HcvMA" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menyusun dokumen perencanaan berbasis data, visi-misi disepakati bersama, indikator terukur.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Dokumen EDM (Evaluasi Diri Madrasah)</li>
                         <li class="bukti-item">RKJM</li>
                         <li class="bukti-item">RKT / RKAM</li>
-                        <li class="bukti-item">Berita acara perumusan visi-misi</li>
-                        <li class="bukti-item">Daftar hadir rapat penyusunan visi-misi</li>
+                        <li class="bukti-item">Berita acara & daftar hadir perumusan visi-misi</li>
                         <li class="bukti-item">Dokumen strategi pencapaian tujuan</li>
                     </ul>
                 </div>
             </div>
-
             <!-- 2.2 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.2 Pendayagunaan Sumber Daya Madrasah</h3>
-                    <a href="https://drive.google.com/drive/folders/1Mg6dvbCehOvdulUq1Pr2u_FFu9yY4M7N" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.2 Pendayagunaan Sumber Daya Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1Mg6dvbCehOvdulUq1Pr2u_FFu9yY4M7N" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menjadi teladan kedisiplinan, mengarahkan warga madrasah, efisiensi pemanfaatan sumber daya.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Daftar hadir elektronik Kepala Madrasah</li>
                         <li class="bukti-item">Laporan kehadiran Kepala Madrasah</li>
                         <li class="bukti-item">Dokumen monev pemanfaatan sumber belajar</li>
@@ -313,19 +308,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 2.3 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.3 Budaya dan Iklim Madrasah</h3>
-                    <a href="https://drive.google.com/drive/folders/1_-ZgMFOyG-z4BUDKtskfVDQfhs8aSnHE" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.3 Budaya dan Iklim Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1_-ZgMFOyG-z4BUDKtskfVDQfhs8aSnHE" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Membangun budaya mutu, lingkungan kondusif, budaya baca-tulis, kegiatan prestasi.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Data peningkatan KKM & hasil ujian</li>
                         <li class="bukti-item">Program keunggulan & inovasi madrasah</li>
                         <li class="bukti-item">Dokumentasi lingkungan madrasah yang asri & bersih</li>
@@ -334,41 +329,40 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 2.4 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.4 Pengelolaan Guru dan Tenaga Kependidikan</h3>
-                    <a href="https://drive.google.com/drive/folders/1_ldldmeQ1kI9TDn1cSRA9CW_XYFTXApF" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.4 Pengelolaan Guru dan Tenaga Kependidikan</h3>
+                    <a href="https://drive.google.com/drive/folders/1_ldldmeQ1kI9TDn1cSRA9CW_XYFTXApF" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Merencanakan pembinaan, membina berkala, memfasilitasi pengembangan kompetensi.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Program kerja pembinaan guru & tendik</li>
                         <li class="bukti-item">Laporan workshop & pelatihan</li>
                         <li class="bukti-item">Buku catatan pembinaan</li>
-                        <li class="bukti-item">Notulen rapat pembinaan</li>
-                        <li class="bukti-item">Daftar hadir rapat pembinaan</li>
+                        <li class="bukti-item">Notulen & daftar hadir rapat pembinaan</li>
                         <li class="bukti-item">Laporan kinerja guru & tendik</li>
                     </ul>
                 </div>
             </div>
-
             <!-- 2.5 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.5 Pengelolaan Sarana dan Prasarana</h3>
-                    <a href="https://drive.google.com/drive/folders/1qO0jhooqw9FTmZKtg6RB62pdu973UvZy" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.5 Pengelolaan Sarana dan Prasarana</h3>
+                    <a href="https://drive.google.com/drive/folders/1qO0jhooqw9FTmZKtg6RB62pdu973UvZy" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Mengelola gedung, perabot, alat, perpustakaan, laboratorium, & unit penunjang secara optimal.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Buku inventaris sarana & prasarana</li>
                         <li class="bukti-item">Buku pemeliharaan sarpras</li>
                         <li class="bukti-item">Data layanan perpustakaan & laboratorium</li>
@@ -376,19 +370,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 2.6 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.6 Pengelolaan Peserta Didik</h3>
-                    <a href="https://drive.google.com/drive/folders/1vSyAHg0AXDnPUpEng2Z9__ZkQsDQj224" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.6 Pengelolaan Peserta Didik</h3>
+                    <a href="https://drive.google.com/drive/folders/1vSyAHg0AXDnPUpEng2Z9__ZkQsDQj224" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> PPDB, pengembangan potensi, kegiatan pembiasaan & pengembangan diri.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Program PPDB</li>
                         <li class="bukti-item">Brosur PPDB</li>
                         <li class="bukti-item">Data analisis bekal ajar & psikotes</li>
@@ -397,19 +391,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 2.7 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.7 Kurikulum dan Kegiatan Pembelajaran</h3>
-                    <a href="https://drive.google.com/drive/folders/15RCsZiU21zKq_faJWiUR-I0qGppKXN9H" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.7 Kurikulum dan Kegiatan Pembelajaran</h3>
+                    <a href="https://drive.google.com/drive/folders/15RCsZiU21zKq_faJWiUR-I0qGppKXN9H" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Mengembangkan kurikulum, pelaksanaan pembelajaran, KKG/MGMP, inovasi.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">SK Tim Pengembang Kurikulum</li>
                         <li class="bukti-item">Dokumen kurikulum & notulen rapat penyusunan</li>
                         <li class="bukti-item">Struktur kurikulum</li>
@@ -420,19 +414,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 2.8 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.8 Pengelolaan Keuangan</h3>
-                    <a href="https://drive.google.com/drive/folders/1q1hB58-Vi44f8lLCXGIBvyJpSIy7jCh9" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.8 Pengelolaan Keuangan</h3>
+                    <a href="https://drive.google.com/drive/folders/1q1hB58-Vi44f8lLCXGIBvyJpSIy7jCh9" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Perencanaan anggaran, sumber dana, pengelolaan transparan & akuntabel, laporan berkala.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">RKJM / RKTM</li>
                         <li class="bukti-item">Rencana Anggaran</li>
                         <li class="bukti-item">Laporan keuangan</li>
@@ -441,19 +435,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 2.9 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.9 Ketatausahaan Madrasah</h3>
-                    <a href="https://drive.google.com/drive/folders/1LU-rggY9TepyWDAR7HdTqGy1WobDgL4A" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.9 Ketatausahaan Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1LU-rggY9TepyWDAR7HdTqGy1WobDgL4A" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Persuratan, administrasi lengkap, kearsipan tertib, dokumen akreditasi.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Administrasi surat masuk & keluar</li>
                         <li class="bukti-item">Administrasi akademik, kesiswaan, sarpras, keuangan, humas</li>
                         <li class="bukti-item">Arsip dinamis</li>
@@ -461,19 +455,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 2.10 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">2.10 Monitoring, Evaluasi, dan Pelaporan</h3>
-                    <a href="https://drive.google.com/drive/folders/1nd6g5f7nv8-cSf9eyB_n5d3A4f2Gb_PB" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">2.10 Monitoring, Evaluasi, dan Pelaporan</h3>
+                    <a href="https://drive.google.com/drive/folders/1nd6g5f7nv8-cSf9eyB_n5d3A4f2Gb_PB" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Standar kinerja, monev, laporan, tindak lanjut perbaikan.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Dokumen SKP yang terukur</li>
                         <li class="bukti-item">Laporan pelaksanaan monitoring & evaluasi</li>
                         <li class="bukti-item">Program tindak lanjut hasil monev</li>
@@ -487,28 +481,28 @@
 <!-- ====================================== -->
 <!-- BAGIAN 3: KEWIRAUSAHAAN -->
 <!-- ====================================== -->
-<section class="mb-10">
+<section>
     <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
         <div class="bg-gradient-to-r from-amber-600 to-yellow-500 text-white p-5">
             <h2 class="text-xl font-bold flex items-center gap-3">
-                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center">3</span>
+                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0">3</span>
                 Pengembangan Kewirausahaan
             </h2>
         </div>
-
         <div class="p-5 space-y-5">
             <!-- 3.1 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">3.1 Inovasi Pengembangan Madrasah</h3>
-                    <a href="https://drive.google.com/drive/folders/1TYkZd_rwEWd1AC2j5G2Y-7833KsWyOIy" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">3.1 Inovasi Pengembangan Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1TYkZd_rwEWd1AC2j5G2Y-7833KsWyOIy" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Memahami perubahan, strategi inovasi, budaya kreativitas, prakarsa warga madrasah.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Program pengembangan kewirausahaan</li>
                         <li class="bukti-item">Profil madrasah</li>
                         <li class="bukti-item">Dokumentasi pemanfaatan inovasi & kreativitas</li>
@@ -516,19 +510,19 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 3.2 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">3.2 Perilaku Kerja Keras & Kreatif</h3>
-                    <a href="https://drive.google.com/drive/folders/1_rnSnqfI3KdDTCk-w1NI4IaUHG-d_U8s" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">3.2 Perilaku Kerja Keras & Kreatif</h3>
+                    <a href="https://drive.google.com/drive/folders/1_rnSnqfI3KdDTCk-w1NI4IaUHG-d_U8s" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Berpikir kreatif-produktif, memberdayakan potensi, menumbuhkan jiwa wirausaha.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">RPP yang memuat keterampilan berpikir kreatif & produktif</li>
                         <li class="bukti-item">Hasil karya siswa</li>
                         <li class="bukti-item">Rencana Pengembangan Madrasah (RPM)</li>
@@ -536,60 +530,60 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 3.3 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">3.3 Motivasi dan Keinginan untuk Sukses</h3>
-                    <a href="https://drive.google.com/drive/folders/1Ad8JODtl27bRofqweh1ILrsJKp7DXIsG" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">3.3 Motivasi dan Keinginan untuk Sukses</h3>
+                    <a href="https://drive.google.com/drive/folders/1Ad8JODtl27bRofqweh1ILrsJKp7DXIsG" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Belajar dari pengalaman, berusaha terbaik, menginisiasi perubahan positif.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Dokumentasi forum komunikasi dengan orang tua & lembaga lain</li>
                         <li class="bukti-item">Keikutsertaan dalam lomba</li>
                         <li class="bukti-item">Piagam & piala prestasi guru, tendik, & Kepala Madrasah</li>
                     </ul>
                 </div>
             </div>
-
             <!-- 3.4 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">3.4 Pantang Menyerah dan Solusi Kendala</h3>
-                    <a href="https://drive.google.com/drive/folders/1WNuoxAzGK_kcFjWu7mdTegrsTWTbIMKt" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">3.4 Pantang Menyerah dan Solusi Kendala</h3>
+                    <a href="https://drive.google.com/drive/folders/1WNuoxAzGK_kcFjWu7mdTegrsTWTbIMKt" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Melibatkan tokoh, menjaga kerukunan, mencari solusi terbaik.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Dokumen kerja sama / MoU dengan tokoh agama, masyarakat, & pemerintah</li>
                         <li class="bukti-item">Kerja sama sister school</li>
                         <li class="bukti-item">Catatan & foto penanganan konflik internal secara objektif</li>
                     </ul>
                 </div>
             </div>
-
             <!-- 3.5 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">3.5 Naluri Kewirausahaan (Produksi/Jasa)</h3>
-                    <a href="https://drive.google.com/drive/folders/1bvc7xm-d-r1U6uoWJT2Nk-0caaDjyNVo" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">3.5 Naluri Kewirausahaan (Produksi/Jasa)</h3>
+                    <a href="https://drive.google.com/drive/folders/1bvc7xm-d-r1U6uoWJT2Nk-0caaDjyNVo" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
                 <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Rencana unit produksi/jasa, pembinaan profesional, pengelolaan untuk pembelajaran & pemasukan.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Perencanaan kegiatan produksi & jasa sesuai potensi madrasah</li>
-                        <li class="bukti-item">Laporan pelaksanaan Unit Produksi Kewirausahaan</li>
-                        <li class="bukti-item">Evaluasi program kewirausahaan</li>
+                        <li class="bukti-item">Laporan pelaksanaan Unit Produksi Kewirausahaan
+						<li class="bukti-item">Evaluasi pelaksanaan program kewirausahaan</li>
                     </ul>
                 </div>
             </div>
@@ -598,30 +592,30 @@
 </section>
 
 <!-- ====================================== -->
-<!-- BAGIAN 4: SUPERVISI AKADEMIK -->
+<!-- BAGIAN 4: SUPERVISI GURU & TENAGA KEPENDIDIKAN -->
 <!-- ====================================== -->
-<section class="mb-10">
+<section>
     <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <div class="bg-gradient-to-r from-emerald-600 to-green-500 text-white p-5">
+        <div class="bg-gradient-to-r from-emerald-600 to-teal-500 text-white p-5">
             <h2 class="text-xl font-bold flex items-center gap-3">
-                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center">4</span>
+                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0">4</span>
                 Supervisi Guru dan Tenaga Kependidikan
             </h2>
         </div>
-
         <div class="p-5 space-y-5">
             <!-- 4.1 -->
             <div class="sub-card bg-slate-50 rounded-lg p-4">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
-                    <h3 class="font-bold text-lg text-slate-800">4.1 Penyusunan Program Supervisi Akademik</h3>
-                    <a href="https://drive.google.com/drive/folders/187780tuzDJjsyUv5jbQs_EjVGNnKB9El" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
-                        <i class="fa fa-folder-open mr-1"></i> Buka Berkas
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">4.1 Penyusunan Program Supervisi Akademik</h3>
+                    <a href="https://drive.google.com/drive/folders/187780tuzDJjsyUv5jbQs_EjVGNnKB9El" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
                     </a>
                 </div>
-                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Identifikasi masalah, tujuan terukur, instrumen relevan.</p>
-                <div class="bg-slate-100 rounded-lg p-3 text-sm">
+                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menyusun program supervisi berbasis kebutuhan, melibatkan tim, menetapkan instrumen & jadwal.</p>
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
                     <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
-                    <ul class="space-y-1 text-slate-600">
+                    <ul class="space-y-1.5 text-slate-600">
                         <li class="bukti-item">Program pengawasan & supervisi pembelajaran</li>
                         <li class="bukti-item">Jadwal pelaksanaan supervisi</li>
                         <li class="bukti-item">SK Tim Supervisor</li>
@@ -629,6 +623,157 @@
                     </ul>
                 </div>
             </div>
-
             <!-- 4.2 -->
-           
+            <div class="sub-card bg-slate-50 rounded-lg p-4">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">4.2 Pelaksanaan Supervisi Akademik</h3>
+                    <a href="https://drive.google.com/drive/folders/1ghQCvtfIQAY1w8417BKrQTYxwcbAtmN4" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
+                    </a>
+                </div>
+                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Melaksanakan tahapan supervisi, mengumpulkan data akurat, memberi umpan balik yang membangun.</p>
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
+                    <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
+                    <ul class="space-y-1.5 text-slate-600">
+                        <li class="bukti-item">Jadwal pelaksanaan supervisi</li>
+                        <li class="bukti-item">Daftar hadir, notulen, & foto pertemuan awal</li>
+                        <li class="bukti-item">Instrumen & laporan hasil supervisi</li>
+                        <li class="bukti-item">Catatan rekomendasi hasil supervisi</li>
+                        <li class="bukti-item">Program remedial & pengayaan</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 4.3 -->
+            <div class="sub-card bg-slate-50 rounded-lg p-4">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">4.3 Penilaian dan Tindak Lanjut Supervisi</h3>
+                    <a href="https://drive.google.com/drive/folders/1yQB9ONYulWiR-rC_14OmswMIddu2-Lmk" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
+                    </a>
+                </div>
+                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Menganalisis hasil, menyusun program pengembangan, memantau perbaikan berkelanjutan.</p>
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
+                    <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
+                    <ul class="space-y-1.5 text-slate-600">
+                        <li class="bukti-item">Dokumen analisis hasil tindak lanjut supervisi</li>
+                        <li class="bukti-item">Hasil workshop & diklat penilaian</li>
+                        <li class="bukti-item">Laporan tindak lanjut supervisi</li>
+                        <li class="bukti-item">Program Pengembangan Keprofesian Berkelanjutan (PKB) Guru</li>
+                        <li class="bukti-item">Daftar hadir & foto kegiatan PKB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================================== -->
+<!-- BAGIAN 5: HASIL KINERJA KEPALA MADRASAH -->
+<!-- ====================================== -->
+<section>
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div class="bg-gradient-to-r from-rose-600 to-pink-500 text-white p-5">
+            <h2 class="text-xl font-bold flex items-center gap-3">
+                <span class="bg-white/20 w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0">5</span>
+                Hasil Kinerja Kepala Madrasah
+            </h2>
+        </div>
+        <div class="p-5 space-y-5">
+            <!-- 5.1 -->
+            <div class="sub-card bg-slate-50 rounded-lg p-4">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">5.1 Prestasi Peserta Didik</h3>
+                    <a href="https://drive.google.com/drive/folders/1fuUb_HPPnrfFmJeh_36EN7OCsN6HbEOz" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
+                    </a>
+                </div>
+                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Peserta didik meraih prestasi akademik & non-akademik di berbagai tingkat.</p>
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
+                    <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
+                    <ul class="space-y-1.5 text-slate-600">
+                        <li class="bukti-item">Piagam & piala prestasi akademik peserta didik</li>
+                        <li class="bukti-item">Piagam & piala prestasi non-akademik peserta didik</li>
+                        <li class="bukti-item">Dokumentasi kegiatan & kejuaraan berbagai tingkat</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 5.2 -->
+            <div class="sub-card bg-slate-50 rounded-lg p-4">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">5.2 Prestasi Pendidik dan Tenaga Kependidikan</h3>
+                    <a href="https://drive.google.com/drive/folders/1ZvdcchJewZw7XXUFkXHBv2rZzMO83HKd" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
+                    </a>
+                </div>
+                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Guru & tenaga kependidikan meraih pengakuan/prestasi profesional.</p>
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
+                    <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
+                    <ul class="space-y-1.5 text-slate-600">
+                        <li class="bukti-item">Piagam prestasi akademik & non-akademik guru</li>
+                        <li class="bukti-item">Piagam prestasi tenaga kependidikan</li>
+                        <li class="bukti-item">Sertifikat penghargaan & pengakuan profesional</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 5.3 -->
+            <div class="sub-card bg-slate-50 rounded-lg p-4">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">5.3 Prestasi Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1vS7DwPTxTl3K4PO4uUyl7Szw8wDaJauV" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
+                    </a>
+                </div>
+                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Madrasah unggul dibandingkan lembaga lain di lingkungannya.</p>
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
+                    <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
+                    <ul class="space-y-1.5 text-slate-600">
+                        <li class="bukti-item">Bukti keunggulan prestasi akademik madrasah</li>
+                        <li class="bukti-item">Bukti keunggulan prestasi non-akademik madrasah</li>
+                        <li class="bukti-item">Dokumen perbandingan pencapaian dengan lembaga lain</li>
+                        <li class="bukti-item">Penghargaan & pengakuan yang diterima madrasah</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 5.4 -->
+            <div class="sub-card bg-slate-50 rounded-lg p-4">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <h3 class="font-bold text-lg text-slate-800 flex-1">5.4 Prestasi Kepala Madrasah</h3>
+                    <a href="https://drive.google.com/drive/folders/1JWMzWgYwDWU4CRZE41EXXFurfI0WQXMV" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-sm px-4 py-2 rounded-lg transition-colors whitespace-nowrap flex-shrink-0">
+                        <i class="fa fa-folder-open"></i> Buka Berkas
+                    </a>
+                </div>
+                <p class="text-sm text-slate-600 mb-3"><strong>Indikator:</strong> Kepala madrasah memiliki kualifikasi, kompetensi, & prestasi yang mendukung kemajuan madrasah.</p>
+                <div class="bg-slate-100 rounded-lg p-4 text-sm">
+                    <p class="font-semibold text-slate-700 mb-2">📋 Bukti Fisik:</p>
+                    <ul class="space-y-1.5 text-slate-600">
+                        <li class="bukti-item">Ijazah Kepala Madrasah</li>
+                        <li class="bukti-item">Sertifikat pelatihan & diklat</li>
+                        <li class="bukti-item">Bukti penguasaan TIK/ICT</li>
+                        <li class="bukti-item">Piagam, medali, piala, & SK penghargaan Kepala Madrasah</li>
+                        <li class="bukti-item">Karya ilmiah & hasil penelitian pendidikan</li>
+                        <li class="bukti-item">Dokumen pelibatan komite & MoU kemitraan dengan pemangku kepentingan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-6 mt-8">
+    <div class="container mx-auto px-4 text-center">
+        <p class="text-sm text-slate-400">Dashboard Dokumen PKKM — MI AS'ADIYAH CABENG II</p>
+        <p class="text-xs text-slate-500 mt-2">Silakan ganti tautan "Buka Berkas" dengan link Google Drive masing-masing folder</p>
+    </div>
+</footer>
+
+</body>
+</html>
